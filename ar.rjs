@@ -1,0 +1,138 @@
+npx create-react-app bookstore
+cd bookstore
+import React from 'react';
+
+function Book({ title, author, ar, vr, ir }) {
+  return (
+    <div className="book">
+      <h2>{title}</h2>
+      <p>Author: {author}</p>
+      <p>AR: {ar ? 'Yes' : 'No'}</p>
+      <p>VR: {vr ? 'Yes' : 'No'}</p>
+      <p>IR: {ir ? 'Yes' : 'No'}</p>
+    </div>
+  );
+}
+
+export default Book;
+// src/components/BookList.js
+import React from 'react';
+import Book from './Book';
+
+function BookList({ books }) {
+  return (
+    <div className="book-list">
+      {books.map((book, index) => (
+        <Book key={index} {...book} />
+      ))}
+    </div>
+  );
+}
+
+export default BookList;
+// src/App.js
+import React from 'react';
+import './App.css';
+import BookList from './components/BookList';
+
+const books = [
+  {
+    title: 'The Subtle Art of Not giving a fuck',
+    author: 'Mark Manson',
+    ar: true,
+    vr: false,
+    ir: true,
+  },
+  // Add more book data here...
+  {
+    title: 'ARIHANT  FULL 10 YEAR',
+    author: 'S CHAND.',
+    ar: true,
+    vr: false,
+    ir: true,
+  },
+  {
+    title: 'Book 1',
+    author: 'Author 1',
+    ar: true,
+    vr: false,
+    ir: true,
+  },
+  {
+    title: 'Book 1',
+    author: 'Author 1',
+    ar: true,
+    vr: false,
+    ir: true,
+  },
+  {
+    title: 'Book 1',
+    author: 'Author 1',
+    ar: true,
+    vr: false,
+    ir: true,
+  },
+  {
+    title: 'Book 1',
+    author: 'Author 1',
+    ar: true,
+    vr: false,
+    ir: true,
+  },
+  {
+    title: 'Book 1',
+    author: 'Author 1',
+    ar: true,
+    vr: false,
+    ir: true,
+  },
+  {
+    title: 'EVERYTHING IS FUCKED',
+    author: 'MARK MANSON',
+    ar: true,
+    vr: false,
+    ir: true,
+  },
+  {
+    title: 'ATOMIC HABITS',
+    author: 'Author 1',
+    ar: true,
+    vr: false,
+    ir: true,
+  },
+  {
+    title: 'Book 1',
+    author: 'Author 1',
+    ar: true,
+    vr: false,
+    ir: true,
+  },
+];
+
+function App() {
+  return (
+    <div className="App">
+      <h1>Books with AR, VR, and IR Options</h1>
+      <BookList books={books} />
+    </div>
+  );
+}
+
+export default App;
+/* src/App.css */
+.App {
+  text-align: center;
+}
+
+.book {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+npm start
