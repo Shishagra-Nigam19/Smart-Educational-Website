@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Full Screen Lock</title>
+    <title>Quiz</title>
 </head>
 <body>
-    <button id="lock-button">Lock Full Screen</button>
-    <div id="overlay" class="hidden"></div>
-    <div id="content">
-        <!-- Your content goes here -->
-        <p>This is the content of your page.</p>
+    <div id="quiz-container">
+        <h1>Quiz</h1>
+        <div id="question-container">
+            <p id="question"></p>
+        </div>
+        <div id="options-container">
+            <button id="option1"></button>
+            <button id="option2"></button>
+            <button id="option3"></button>
+            <button id="option4"></button>
+        </div>
+        <p id="timer">Time left: <span id="time">60</span> seconds</p>
     </div>
-    <script src="script.js"></script>
+    <script src="quiz.js"></script>
 </body>
 </html>
+JavaScript (quiz.js):

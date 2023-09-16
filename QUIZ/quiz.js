@@ -1,154 +1,147 @@
 const questions = [
-  
     {
         question: "The alkaline earth metal sulphate(s) which are readily soluble in water is/are: A)BeSO4 B)MgSO4  C)CasO4  D)SrSO4  E)BasO4",
-        choices: ["1) A only ", " 2)B only ", "3) A and B", "4) B and C"],
-        correctAnswer: "3) A and B"
+        options: ["A only ", " B only ", "A AND B ", "B AND C"],
+        correctAnswer: "A AND B"
     },
-  
- {
+    {
         question: "Amongst the following compounds , which one is an antacid ? (A) Ranitidine (B) Terfenadine (C) Meprobamate (D) Brompheniramine",
-		choices: ["1) A", " 2) 	B" , "3) c", "4) D"],
-		 CorrectAnswer: "1) A"
+        options: ["", " ", "Meprobamate", "Brompheniramine"],
+        correctAnswer: " "
     },
-{
-        question:  "Potassium dichromate acts as a strong oxidizing agent in acidic solution. During this process, the oxidation state changes from (1) +3 to +1 (2) +6 to +3 (3) +2 to +1 (4) +6 to +2",
-		choices: ["1) A", " 2) B", "3) C", "4) D"],
-		CorrectAnswer: "2) B"
+    {
+        question: "Potassium dichromate acts as a strong oxidizing agent in acidic solution. During this process, the oxidation state changes from (1) +3 to +1 (2) +6 to +3 (3) +2 to +1 (4) +6 to +2  ",
+        options: [" A", "B", "C", "D"],
+        correctAnswer: "B"
     },
-{
-        question: "The isomeric deuterated bromide with molecular formula CH Dbr having two chiral carbon atoms is (1) 2-Bromo-1-deuterobutane (2) 2-Bromo-2-deuterobutane (3) 2-Bromo-3-deuterobutane (4) 2-Bromo-1-deutro-2-methylpropane",
-		choices: ["1) A", " 2) B", "3)  C", "4) D"],
-		CorrectAnswer: "3) C"
+    {
+        question: "The isomeric deuterated bromide with molecular formula CH Dbr having two chiral carbon atoms is (1) 2-Bromo-1-deuterobutane (2) 2-Bromo-2-deuterobutane (3) 2-Bromo-3-deuterobutane (4) 2-Bromo-1-deutro-2-methylpropane  ",
+        options: [ "A", "B", "C", "D"],
+        correctAnswer: "C"
     },
-{
-        question: "Which element is not present in nessler's reagent? (1) Mercury (2) POtassium (3) Iodine (4) Oxygen",
-		Option: ["1) A", " 2) B", "3) C", "4) D"],
-		CorrectAnswer: "4) D"
+    {
+        question: "Which element is not present in nessler's reagent? (1) Mercury (2) POtassium (3) Iodine (4) Oxygen   ",
+        options: ["A", "B", "C", "D"],
+        correctAnswer: "D"
     },
-{
-	    question: "An observer is moving with half the speed of light towards a stationary microwave source emitting waves at frequency 10 ghz What is the frequency of the microwave measured by the observer?(speed of light = 3 x 108 ms-1) (1) 12.1 Ghz (2) 17.3 Ghz (3) 15.3 Ghz (4) 10.1 Ghz",
-		Option: ["1) A", " 2) B", "3) C", "4) D"],
-		CorrectAnswer: "2) B"
-   },
-{
-    question: "A solid metal cube of edge length 2 cm is moving in the postive y direction at a constant speed of 6 m/s. There is a uniform magnetic field of 0.1 T in the positive z direction . The potential difference between the two faces of the cube perpendicular to the x axis, is: (1) 6 mv (2) 1 mv (3) 12 mv (4) 2 mv",
-    choices: ["1) A", " 2) B", "3) C", "4) D"],
-	CorrectAnswer: "3) C"   
+    {
+        question: "An observer is moving with half the speed of light towards a stationary microwave source emitting waves at frequency 10 ghz What is the frequency of the microwave measured by the observer?(speed of light = 3 x 108 ms-1) (1) 12.1 Ghz (2) 17.3 Ghz (3) 15.3 Ghz (4) 10.1 Ghz",
+        options: ["A", "B", "C", "D"],
+        correctAnswer: "B"
     },
-{
- 	question:  "A 2W carbon resistor is color coded with green, black, red and brown respectively. The maximum current which can be passed through this resistor is: (1) 63 mA (2) 0.4 mA (3) 100 mA (4) 20 mA",
-	choices:["1) A", " 2) B", "3) C", "4) D"],
-	CorrectAnswer: "3) C"
-    
+    {
+        question: "Which element is not present in nessler's reagent? (1) Mercury (2) POtassium (3) Iodine (4) Oxygen  ",
+        options: ["A", "B", "C", "D"],
+        correctAnswer: "D"
     },
-{
-        question:"Two guns A and B can fire buullets at speed 1 km/s  and 2km/s respectively. From a point on a horizontal ground , they are fired in all possible direction. The ratio of maximum areas covered by the bullets fired by two guns, on the ground is: (1) 1 : 2 (2) 1 : 4  (3) 1 : 8  (4) 1 : 16",
-		choices: ["A", " B", "C", "D"],
-		CorrectAnswer: "D",
+    {
+        question: "An observer is moving with half the speed of light towards a stationary microwave source emitting waves at frequency 10 ghz What is the frequency of the microwave measured by the observer?(speed of light = 3 x 108 ms-1) (1) 12.1 Ghz (2) 17.3 Ghz (3) 15.3 Ghz (4) 10.1 Ghz  ",
+        options: ["A", "B", "C", "D"],
+        correctAnswer: "B"
     },
-{
-        question: "Two hollow conducting spheres of radii R1 and R2 (R1 >> R2) have equal charges. The potential would be (1) More on bigger sphere (2) More on smaller sphere (3) Equal on both the spheres (4) Dependent on the material property of the sphere",
-        choices: ["1) A", "2) B", "3) C", "4) D"],
-		CorrectAnswer: "2) B"
+    {
+        question: "A solid metal cube of edge length 2 cm is moving in the postive y direction at a constant speed of 6 m/s. There is a uniform magnetic field of 0.1 T in the positive z direction . The potential difference between the two faces of the cube perpendicular to the x axis, is: (1) 6 mv (2) 1 mv (3) 12 mv (4) 2 mv   ",
+        options: ["A", "B", "C", "D"],
+        correctAnswer: "C"
+    },
+    {
+        question: "A 2W carbon resistor is color coded with green, black, red and brown respectively. The maximum current which can be passed through this resistor is: (1) 63 mA (2) 0.4 mA (3) 100 mA (4) 20 mA  ",
+        options: ["A", "B", "C", "D"],
+        correctAnswer: "C"
+    },
+    {
+        question: "Two guns A and B can fire buullets at speed 1 km/s  and 2km/s respectively. From a point on a horizontal ground , they are fired in all possible direction. The ratio of maximum areas covered by the bullets fired by two guns, on the ground is: (1) 1 : 2 (2) 1 : 4  (3) 1 : 8  (4) 1 : 16   ",
+        options: ["A", "B", "C", "D"],
+        correctAnswer: "D"
+    },
+    {
+        question: "Two hollow conducting spheres of radii R1 and R2 (R1 >> R2) have equal charges. The potential would be (1) More on bigger sphere (2) More on smaller sphere (3) Equal on both the spheres (4) Dependent on the material property of the sphere   ",
+        options: ["A", "B", "C", "D"],
+        correctAnswer: "B"
+    },
+    {
+        question: "Which one of the following plants does not show plasticity? (1) Cotton (2) Coriander (3) Buttercup (4) Maize   ",
+        options: ["A", "B", "C", "D"],
+        correctAnswer: "D"
+    },
+    {
+        question: "XO type of sex distribution can be found in: (1) Drosophila  (2) Birds (3) Grasshoppers (4) Monkeys   ",
+        options: ["A", "B", "C", "D"],
+        correctAnswer: "C"
+    },
+    {
+        question: "Production of cucumber has increased manifold in recent years. Application of the following phytohormones has resulted in this increased yield as the hormone is known to produce female flowers in the plants: (1) ABA (2) Gibberellin (3) Ethylene  (4) Ctyokinin  ",
+        options: ["A", "B", "C", "D"],
+        correctAnswer: "C"
+    },
+    {
+        question: "The devices which can remoove particulate matter present in the exhaust from a thermal power plant is: (1) STP (2) Incinerator  (3) Electrostatic Precipitator (4) Catalytic Convertor   ",
+        options: ["A", "B", "C", "D"],
+        correctAnswer: "C"
+    },
+    {
+        question: "Which one of the following plants shows vexillary aestivation and diadelphous stamens? (1) Colchium Autumnale (2) Pisum sativum (3) Allium cepa (4) Solanum nigrum    ",
+        options: ["A", "B", "C", "D"],
+        correctAnswer: "B"
     },
 
-{
-       question: "Which one of the following plants does not show plasticity? (1) Cotton (2) Coriander (3) Buttercup (4) Maize",
-		choices: ["1) A", "2) B", "3) C", "4) D"],
-		CorrectAnswer: "4) D"
-    },
-{
-        question: "XO type of sex distribution can be found in: (1) Drosophila  (2) Birds (3) Grasshoppers (4) Monkeys",
-		choices: ["1) A", " 2) B", "3) C", "4) D"],
-		CorrectAnswer: "3) C"
-    },
-{
-      question: "Production of cucumber has increased manifold in recent years. Application of the following phytohormones has resulted in this increased yield as the hormone is known to produce female flowers in the plants: (1) ABA (2) Gibberellin (3) Ethylene  (4) Ctyokinin",
-      Choices: ["1) A", "2) B", "3) C", "4) D"],
-		CorrectAnswer: "3) C"  
-    },
-{
-        question: "The devices which can remoove particulate matter present in the exhaust from a thermal power plant is: (1) STP (2) Incinerator  (3) Electrostatic Precipitator (4) Catalytic Convertor",
-		choices: ["1) A", "2) B", "3) C", "4) D"],
-		CorrectAnswer: "3) C"
-    },
-{
-      question: "Which one of the following plants shows vexillary aestivation and diadelphous stamens? (1) Colchium Autumnale (2) Pisum sativum (3) Allium cepa (4) Solanum nigrum",
-		choices: ["1) A", "2) B", "3) C", "4) D"],
-		CorrectAnswer: "2) B"
-    },
+
 ];
 
 let currentQuestionIndex = 0;
 let timer;
-let timeLeft = 60;
-
-const questionElement = document.getElementById("question");
-const choicesElement = document.getElementById("choices");
-const timerElement = document.getElementById("timer");
-const nextButton = document.getElementById("next-btn");
-
-function displayQuestion() {
-    const currentQuestion = questions[currentQuestionIndex];
-    questionElement.textContent = currentQuestion.question;
-    choicesElement.innerHTML = "";
-
-    currentQuestion.choices.forEach((choice) => {
-        const li = document.createElement("li");
-        li.textContent = choice;
-        li.addEventListener("click", () => checkAnswer(choice));
-        choicesElement.appendChild(li);
-    });
-
-    startTimer();
-}
 
 function startTimer() {
+    let time = 60; // 60 seconds for each question
     timer = setInterval(() => {
-        timeLeft--;
-        timerElement.textContent = timeLeft + " seconds";
+        document.getElementById("time").textContent = time;
+        time--;
 
-        if (timeLeft === 0) {
+        if (time < 0) {
             clearInterval(timer);
-            checkAnswer(null); // Time's up, check answer
+            // Move to the next question when time is up
+            nextQuestion();
         }
     }, 1000);
 }
 
-function checkAnswer(selectedChoice) {
-    clearInterval(timer);
-    nextButton.disabled = false;
-    
-    const currentQuestion = questions[currentQuestionIndex];
-    const isCorrect = selectedChoice === currentQuestion.correctAnswer;
+function displayQuestion(index) {
+    const questionElement = document.getElementById("question");
+    const optionsContainer = document.getElementById("options-container");
+    const currentQuestion = questions[index];
 
-    if (isCorrect) {
-        // Handle correct answer logic
-        console.log("Correct!");
-    } else {
-        // Handle incorrect answer logic
-        console.log("Incorrect!");
+    questionElement.textContent = currentQuestion.question;
+
+    for (let i = 0; i < 4; i++) {
+        const optionButton = document.getElementById(`option${i + 1}`);
+        optionButton.textContent = currentQuestion.options[i];
+
+        optionButton.addEventListener("click", () => {
+            if (currentQuestion.options[i] === currentQuestion.correctAnswer) {
+                clearInterval(timer);
+                alert("Correct!");
+                nextQuestion();
+            } else {
+                clearInterval(timer);
+                alert("Incorrect!");
+                nextQuestion();
+            }
+        });
     }
 
+    startTimer();
+}
+
+function nextQuestion() {
     currentQuestionIndex++;
 
-    if (currentQuestionIndex === questions.length) {
-        // End of the quiz
-        questionElement.textContent = "Quiz is over!";
-        choicesElement.innerHTML = "";
-        timerElement.textContent = "";
-        nextButton.disabled = true;
+    if (currentQuestionIndex < questions.length) {
+        displayQuestion(currentQuestionIndex);
     } else {
-        timeLeft = 60;
-        displayQuestion();
+        // Quiz is finished
+        alert("Quiz finished!");
     }
 }
 
-nextButton.addEventListener("click", () => {
-    nextButton.disabled = true;
-    checkAnswer(null); // Move to the next question
-});
-
-// Start the quiz
-displayQuestion();
+// Initial display
+displayQuestion(currentQuestionIndex);
