@@ -1,17 +1,34 @@
-npx create-react-app bookstore
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR/VR Experience</title>
+    <!-- Include A-Frame library -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+    <!-- AR/VR content goes here -->
+    <a-scene>
+        <!-- Add your AR/VR components here -->
+        <a-box position="0 1 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+        <a-box position="2 1 -5" radius="1.25" color="#EF2D5E"></a-box>
+        <a-box position="-2 1 -7" radius="0.5" height="1.5" color="#FFC65D"></a-box>
+        <a-box position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-box>
+
+        <!-- Add any AR/VR assets (e.g., images, models) here -->
+        <!-- Example: <a-assets>
+                        <img id="texture" src="texture.jpg">
+                   </a-assets>
+        -->
+    </a-scene>
+
+    npx create-react-app bookstore
 cd bookstore
 import React from 'react';
 
 function Book({ title, author, ar, vr, ir }) {
-  return (
-    <div className="book">
-      <h2>{title}</h2>
-      <p>Author: {author}</p>
-      <p>AR: {ar ? 'Yes' : 'No'}</p>
-      <p>VR: {vr ? 'Yes' : 'No'}</p>
-      <p>IR: {ir ? 'Yes' : 'No'}</p>
-    </div>
-  );
+  return ;
 }
 
 export default Book;
@@ -59,29 +76,29 @@ const books = [
     ir: true,
   },
   {
-    title: 'Book 1',
-    author: 'Author 1',
+    title: 'New Pattern IIT JEE Mathmatics',
+    author: 'S.K Goyal',
     ar: true,
     vr: false,
     ir: true,
   },
   {
-    title: 'Book 1',
-    author: 'Author 1',
+    title: 'Play with graphs for JEE',
+    author: 'Shaurya Awasthi',
     ar: true,
     vr: false,
     ir: true,
   },
   {
-    title: 'Book 1',
-    author: 'Author 1',
+    title: 'Aptitude Test Problem in Physics',
+    author: 'S.S Krotov',
     ar: true,
     vr: false,
     ir: true,
   },
   {
-    title: 'Book 1',
-    author: 'Author 1',
+    title: 'Problems For Physcial Chemistry',
+    author: 'Narendra Awasthi',
     ar: true,
     vr: false,
     ir: true,
@@ -101,8 +118,8 @@ const books = [
     ir: true,
   },
   {
-    title: 'Book 1',
-    author: 'Author 1',
+    title: 'Plane Trignometry',
+    author: 'SL Loney',
     ar: true,
     vr: false,
     ir: true,
@@ -135,4 +152,10 @@ export default App;
   flex-wrap: wrap;
   justify-content: center;
 }
-npm start
+npm start
+
+    <script>
+        // Add your AR/VR logic here
+    </script>
+</body>
+</html>

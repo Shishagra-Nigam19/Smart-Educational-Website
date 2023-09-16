@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previous Year Question Papers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Previous Year Question Papers</h1>
+    </header>
+    <main>
+        <section id="papers">
+            <!-- Question papers will be listed here -->
+        </section>
+    </main>
+    <footer>
+      -> 2022
+    </footer>
+
+    <footer>
+       -> 2021
+    </footer>
+
+    <footer>
+        -> 2020
+    </footer>
+
+    <footer>
+       -> 2019
+    </footer>
+
+    <footer>
+      -> 2018
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question Papers</title>
+</head>
+<body>
+  <h1>Question Papers by Year</h1>
+  <div id="years-list">
+    <!-- Year buttons will be added here -->
+  </div>
+  <div id="papers-list">
+    <!-- Question papers will be displayed here -->
+  </div>
+  <script>
+    const yearsList = document.getElementById('years-list');
+    const papersList = document.getElementById('papers-list');
+
+    // Function to fetch and display years
+    async function displayYears() {
+      try {
+        const response = await fetch('/years');
+        const data = await response.json();
+
+        data.years.forEach(year => {
+          const yearButton = document.createElement('button');
+          yearButton.textContent = year;
+          yearButton.addEventListener('click', () => displayQuestionPapers(year));
+          yearsList.appendChild(yearButton);
+        });
+      } catch (error) {
+        console.error(`Error fetching years: ${error}`);
+      }
+    }
+
+    // Function to fetch and display question papers for a specific year
+    async function displayQuestionPapers(year) {
+      try {
+        const response = await fetch(`/questionPapers/${year}`);
+        const data = await response.json();
+
+        papersList.innerHTML = ''; // Clear the previous list
+
+        data.questionPapers.forEach(paper => {
+          const paperLink = document.createElement('a');
+          paperLink.href = `/QuestionPapers/${year}/${paper}`;
+          paperLink.textContent = paper;
+          papersList.appendChild(paperLink);
+        });
+      } catch (error) {
+        console.error(`Error fetching question papers: ${error}`);
+      }
+    }
+
+    // Initialize the years list
+    displayYears();
+  </script>
+</body>
+</html>
